@@ -176,8 +176,9 @@ main {
     border-radius: 9999px;
     font-size: 0.875rem;
     font-weight: 500;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     transition: background-color 0.2s ease;
 }
 
