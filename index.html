@@ -1,138 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scan Car - Online Store</title>
+    <title>Scan Car</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Main Container -->
-    <div class="bg-white min-h-screen flex flex-col">
+    <div class="wrapper">
         <!-- Header -->
-        <header class="px-4 sm:px-6 lg:px-8 py-4 sm:py-6 flex items-center justify-between border-b border-gray-100">
-            <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-red-500 rounded-md flex items-center justify-center">
-                    <div class="w-4 h-4 bg-white rounded-sm"></div>
+        <header>
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-inner"></div>
                 </div>
-                <h1 class="text-xl font-bold text-gray-900">Scan Car</h1>
+                <h1 class="logo-text">Scan Car</h1>
             </div>
             
-            <!-- Search Bar -->
-            <div class="flex-1 max-w-md mx-4 sm:mx-6 lg:mx-8">
-                <div class="relative">
-                    <input
-                        type="text"
-                        placeholder="Search products..."
-                        class="w-full px-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                    />
-                    <svg class="absolute right-3 top-2.5 text-gray-400 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                    </svg>
-                </div>
+            <!-- Search bar positioned to the right -->
+            <div class="search-container">
+                <input type="text" placeholder="جستجوی محصولات..." class="search-input">
+                <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
             </div>
-            
-            <!-- Empty space to maintain layout -->
-            <div class="w-16"></div>
         </header>
-        
-        <!-- Main Content Area -->
-        <main class="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-            <div class="w-full max-w-6xl">
-                <!-- Hero Section -->
-                <div class="text-center mb-8 sm:mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">Featured Products</h2>
-                    <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-                        Discover our premium collection of handpicked products designed for your lifestyle
-                    </p>
+
+        <!-- Main Content -->
+        <main>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">محصولات ویژه</h2>
+                    <p class="section-subtitle">مجموعه برتر محصولات دست‌چین شده ما را برای سبک زندگی شما کشف کنید</p>
                 </div>
                 
-                <!-- Products Grid -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+                <!-- Products Grid - Centered and side by side -->
+                <div class="products-grid">
                     <!-- Product 1 -->
-                    <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                        <div class="aspect-square bg-gray-200 rounded-xl mb-4 flex items-center justify-center">
-                            <span class="text-gray-400 text-base sm:text-lg">Product Image</span>
-                        </div>
-                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">Premium Wireless Headphones</h3>
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Experience crystal-clear sound with our latest wireless headphones featuring 30-hour battery life.</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xl sm:text-2xl font-bold text-red-500">$199.99</span>
-                            <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 sm:px-6 rounded-full transition-colors duration-200 text-sm sm:text-base">
-                                Add to Cart
-                            </button>
+                    <div class="product-card">
+                        <div class="product-image">تصویر محصول</div>
+                        <h3 class="product-title">هدفون بی‌سیم پریمیوم</h3>
+						<div>
+							<p class="product-description">با هدفون بی‌سیم جدید ما که دارای باتری 30 ساعته است، صدایی با وضوح کریستالی را تجربه کنید.</p>
+						</div>
+                        <div class="product-footer">
+                            <span class="product-price">$199.99</span>
+                            <button class="add-to-cart">افزودن به سبد خرید</button>
                         </div>
                     </div>
                     
                     <!-- Product 2 -->
-                    <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                        <div class="aspect-square bg-gray-200 rounded-xl mb-4 flex items-center justify-center">
-                            <span class="text-gray-400 text-base sm:text-lg">Product Image</span>
-                        </div>
-                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">Smart Fitness Watch</h3>
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Track your health and fitness with our advanced smartwatch featuring heart rate monitoring and GPS.</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xl sm:text-2xl font-bold text-red-500">$249.99</span>
-                            <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 sm:px-6 rounded-full transition-colors duration-200 text-sm sm:text-base">
-                                Add to Cart
-                            </button>
+                    <div class="product-card">
+                        <div class="product-image">تصویر محصول</div>
+                        <h3 class="product-title">ساعت هوشمند تناسب اندام</h3>
+						<div>
+							<p class="product-description">سلامتی و تناسب اندام خود را با ساعت هوشمند پیشرفته ما که دارای نظارت بر ضربان قلب و GPS است، ردیابی کنید.</p>
+						</div>
+                        <div class="product-footer">
+                            <span class="product-price">$249.99</span>
+                            <button class="add-to-cart">افزودن به سبد خرید</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        
-        <!-- Footer -->
-        <footer class="bg-gray-900 text-white p-6 sm:p-8 mt-auto">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Company Info -->
-                    <div>
-                        <div class="flex items-center space-x-2 mb-4">
-                            <div class="w-8 h-8 bg-red-500 rounded-md flex items-center justify-center">
-                                <div class="w-4 h-4 bg-white rounded-sm"></div>
-                            </div>
-                            <h3 class="text-xl font-bold">Scan Car</h3>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo-container">
+                        <div class="footer-logo">
+                            <div class="footer-logo-inner"></div>
                         </div>
-                        <p class="text-gray-400 mb-4 max-w-md text-sm sm:text-base">
-                            Your trusted online shopping destination for premium products and exceptional customer service.
-                        </p>
+                        <h3 class="footer-logo-text">Scan Car</h3>
                     </div>
-                    
-                    <!-- Contact Info - Right aligned on desktop -->
-                    <div class="lg:text-right">
-                        <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
-                        <ul class="space-y-2 sm:space-y-3 text-gray-400">
-                            <li class="flex items-start justify-end lg:justify-start">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
-                                <span class="text-sm sm:text-base">info@scancar.com</span>
-                            </li>
-                            <li class="flex items-start justify-end lg:justify-start">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                </svg>
-                                <span class="text-sm sm:text-base">+1 (555) 123-4567</span>
-                            </li>
-                            <li class="flex items-start justify-end lg:justify-start">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                                <span class="text-sm sm:text-base">123 Commerce St, New York, NY 10001</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <p class="footer-description">مقصد خرید آنلاین مورد اعتماد شما برای محصولات پریمیوم و خدمات مشتریان استثنایی.</p>
                 </div>
                 
-                <div class="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400">
-                    <p class="text-sm sm:text-base">&copy; 2024 Scan Car. All rights reserved.</p>
+                <!-- Contact Us - Positioned to the right -->
+                <div class="contact-section">
+                    <h4 class="contact-title">تماس با ما</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.828 0L17 12M5 19h14v2H5v-2z"></path>
+                            </svg>
+                            <span>info@scancar.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502.95l-1.71 1.71a2 2 0 01-2.828 0L6 9.288c-1.068-.534-2.184-.83-3.288-.83A2 2 0 003 10.288V12m10 0h10M5 12h10M5 12a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h10M5 12a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.995 1.995 0 01-2.828 0l-4.244-4.244a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>123 Commerce St, New York, NY 10001</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </div>
+            
+            <div class="footer-bottom">
+                © 2024 Scan Car. تمامی حقوق محفوظ است.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
