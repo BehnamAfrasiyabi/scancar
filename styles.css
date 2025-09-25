@@ -37,7 +37,9 @@ header {
 .logo-image {
     width: 2rem;
     height: 2rem;
+    border: 3px solid #ef4444;
     border-radius: 0.25rem;
+    padding: 1px;
 }
 
 .logo-text {
@@ -119,6 +121,8 @@ main {
     flex: 1;
     min-width: 20rem;
     max-width: 20rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
@@ -126,15 +130,11 @@ main {
 }
 
 .product-image {
-    background-color: #e5e7eb;
-    border-radius: 0.5rem;
+    width: 100%;
     height: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
-    color: #9ca3af;
-    font-size: 0.875rem;
 }
 
 .product-title {
@@ -149,12 +149,18 @@ main {
     font-size: 0.875rem;
     margin-bottom: 1rem;
     line-height: 1.5;
+    flex: 1;
+}
+
+.product-spacer {
+    flex: 1;
 }
 
 .product-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
 }
 
 .product-price {
