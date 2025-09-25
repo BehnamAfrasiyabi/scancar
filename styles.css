@@ -34,20 +34,10 @@ header {
     gap: 0.5rem;
 }
 
-.logo {
+.logo-image {
     width: 2rem;
     height: 2rem;
-    background-color: #ef4444;
     border-radius: 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-inner {
-    width: 1rem;
-    height: 1rem;
-    background-color: white;
 }
 
 .logo-text {
@@ -234,20 +224,10 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-.footer-logo {
+.footer-logo-image {
     width: 2rem;
     height: 2rem;
-    background-color: #ef4444;
     border-radius: 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-logo-inner {
-    width: 1rem;
-    height: 1rem;
-    background-color: white;
 }
 
 .footer-logo-text {
